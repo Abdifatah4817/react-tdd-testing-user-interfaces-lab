@@ -1,0 +1,32 @@
+/* src/App.css */
+
+/* Make the app content centered */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Style the heading */
+.App h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Make the profile image small and circular */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Style paragraph text */
+.App p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
