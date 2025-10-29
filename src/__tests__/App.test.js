@@ -1,4 +1,4 @@
-import '@testing-library/jest-dom';
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "../App";
 
@@ -14,9 +14,8 @@ describe("Portfolio Page", () => {
 
   test("displays profile image with correct alt text", () => {
     render(<App />);
-    // Updated alt text
     const image = screen.getByRole("img", {
-      name: /abdifatah mursal/i,
+      name: /abdifatah mursal/i, // matches updated alt in App.js
     });
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute("src");
@@ -24,7 +23,10 @@ describe("Portfolio Page", () => {
 
   test("displays 'About Me' heading and paragraph", () => {
     render(<App />);
-    const aboutHeading = screen.getByRole("heading", { name: /about me/i, level: 2 });
+    const aboutHeading = screen.getByRole("heading", {
+      name: /about me/i,
+      level: 2,
+    });
     expect(aboutHeading).toBeInTheDocument();
 
     const aboutParagraph = screen.getByText(/my name is abdifatah mursal/i);
@@ -33,7 +35,10 @@ describe("Portfolio Page", () => {
 
   test("displays 'Biography' heading and paragraph", () => {
     render(<App />);
-    const bioHeading = screen.getByRole("heading", { name: /biography/i, level: 2 });
+    const bioHeading = screen.getByRole("heading", {
+      name: /biography/i,
+      level: 2,
+    });
     expect(bioHeading).toBeInTheDocument();
 
     const bioParagraph = screen.getByText(/abdifatah mursal is a passionate technology/i);
