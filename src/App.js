@@ -1,3 +1,4 @@
+// src/App.js
 import React from "react";
 import profilePic from "./profile.png";
 import "./App.css";
@@ -14,6 +15,7 @@ function App() {
         minHeight: "100vh",
       }}
     >
+      {/* Top-level heading */}
       <h1
         style={{
           fontSize: "2rem",
@@ -45,7 +47,7 @@ function App() {
         >
           <img
             src={profilePic}
-            alt="Profile picture of Abdifatah Mursal"
+            alt="Abdifatah Mursal"
             style={{
               width: "100%",
               height: "100%",
@@ -55,6 +57,7 @@ function App() {
         </div>
       </div>
 
+      {/* About Me Section */}
       <h2 style={{ color: "#333", marginBottom: "10px" }}>About Me</h2>
       <p
         style={{
@@ -69,11 +72,12 @@ function App() {
         University. I am also studying Software Engineering at Moringa School,
         where I am enhancing my technical and programming skills. My goal is to
         become a skilled software developer, leveraging technology to create
-        innovative and efficient solutions that address real-world challenges. I
-        am passionate about continuous learning, problem-solving, and
+        innovative and efficient solutions that address real-world challenges.
+        I am passionate about continuous learning, problem-solving, and
         contributing to the advancement of the tech industry.
       </p>
 
+      {/* Biography Section */}
       <h2 style={{ color: "#333", marginBottom: "10px" }}>Biography</h2>
       <p
         style={{
@@ -96,6 +100,7 @@ function App() {
         and beyond.
       </p>
 
+      {/* Links */}
       <div style={{ marginTop: "20px" }}>
         <a
           href="https://github.com/Abdifatah4817"
